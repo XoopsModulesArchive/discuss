@@ -1,0 +1,124 @@
+<script src="./include/prototype-1.4.0_rc4.js"></script>
+<script type="text/javascript">
+var discuss_id = <{$discuss_id}>
+</script>
+<script type="text/javascript" src="./include/discuss_prototype.js"></script>
+<link rel="stylesheet" type="text/css" href="./include/style.css">
+
+<br />
+
+<div class="corner_b">
+	<div class="c_rtop_b">
+		<span class="c_r1_b"></span>
+		<span class="c_r2_b"></span>
+		<span class="c_r3_b"></span>
+		<span class="c_r4_b"></span>
+	</div>
+
+
+		<div class="corner">
+			<div class="c_rtop">
+				<span class="c_r1"></span>
+				<span class="c_r2"></span>
+				<span class="c_r3"></span>
+				<span class="c_r4"></span>
+			</div>
+				<div class="link_box">
+					<div id="theme">
+						<{$smarty.const._MD_DISCUSS_SUBJECT}>: <a href="viewlog.php?did=<{$discuss_id}>"><{$subject}></a>
+					</div>
+				</div>
+				
+			<div class="c_rbottom">
+				<span class="c_r4"></span>
+				<span class="c_r3"></span>
+				<span class="c_r2"></span></span>
+				<span class="c_r1"></span>
+			</div>
+		</div>
+	
+        
+		<div class="corner">
+			<div class="c_rtop">
+				<span class="c_r1"></span>
+				<span class="c_r2"></span>
+				<span class="c_r3"></span>
+				<span class="c_r4"></span>
+			</div>
+			
+		
+				<div id="messageWindow" name="messageWindow" class="messageWindow"></div>
+				
+
+			<div class="c_rbottom">
+				<span class="c_r4"></span>
+				<span class="c_r3"></span>
+				<span class="c_r2"></span>
+                <span class="c_r1"></span>
+            </div>
+		</div>
+
+      
+		<div class="corner">
+			<div class="c_rtop">
+				<span class="c_r1"></span>
+				<span class="c_r2"></span>
+				<span class="c_r3"></span>
+				<span class="c_r4"></span>
+			</div>
+	
+				 <div id="attendeeList">&nbsp</div>
+
+			<div class="c_rbottom">
+				<span class="c_r4"></span>
+				<span class="c_r3"></span>
+				<span class="c_r2"></span>
+				<span class="c_r1"></span>
+			</div>
+		</div>
+
+        
+		<div class="corner">
+			<div class="c_rtop">
+				<span class="c_r1"></span>
+				<span class="c_r2"></span>
+				<span class="c_r3"></span>
+				<span class="c_r4"></span>
+			</div>
+
+
+					<form name="discuss_form" id="discuss_form">
+						<textarea rows="2" name="inputWindow" id="inputWindow"></textarea> 
+  						<div class="button_box">
+                			<input id="submitButton "name="submitButton" class="submitButton" value="<{$smarty.const._SUBMIT}>" type="button">
+						</div> 
+					</form>
+
+
+			<div class="c_rbottom">
+				<span class="c_r4"></span>
+				<span class="c_r3"></span>
+				<span class="c_r2"></span>
+				<span class="c_r1"></span>
+				</div>
+			</div>
+
+				<div class="color_box">
+					<input id="color1" name="color" value="000000" type="radio" checked><span style='color:#000000;padding:0px;'>&#9632;</span>
+					<input id="color2" name="color" value="dc0000" type="radio"><span style='color:#dc0000;padding:0px;'>&#9632;</span>
+					<input id="color3" name="color" value="4cb5e8" type="radio"><span style='color:#4cb5e8;padding:0px;'>&#9632;</span>
+				</div>
+				
+				<div class="semplica">semplica</div>
+
+	<div class="c_rbottom_b">
+		<span class="c_r4_b"></span>
+		<span class="c_r3_b"></span>
+		<span class="c_r2_b"></span>
+		<span class="c_r1_b"></span>
+	</div>
+</div>
+
+<div class="link_box">
+	<div id="developers"><a href="http://www.x-groupware.org/x/xoops/">discuss0.42 (released for developers)</a>
+</div>

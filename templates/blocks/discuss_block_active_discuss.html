@@ -1,0 +1,15 @@
+<div>
+ <{* -- start search results loop -- *}>
+ <{foreach key=discuss_id item=discuss from= $block}>
+  <div><a href="<{$xoops_url}>/modules/discuss/discuss.php?did=<{$discuss_id}>"><{$discuss.subject}></a></div>
+  <div><{$discuss.message}></div>
+  <ul>
+   <{* -- start user loop -- *}>
+   <{foreach item=uname from=$discuss.unames}>
+    <li><{$uname}></li>
+   <{/foreach}>
+   <{* --  end user loop -- *}>
+  </ul>
+ <{/foreach}>
+ <{* -- end search results loop -- *}>
+</div>

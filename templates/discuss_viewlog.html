@@ -1,0 +1,23 @@
+<a href="./"><{$smarty.const._BACK}></a>
+<hr />
+<h4><{$smarty.const._MD_DISCUSS_READLOG}></h4>
+<{$pagenav}>
+<table class='outer' cellspacing='1'>
+ <tr align='left'>
+  <th>No.</th>
+  <th width='15%'><{$smarty.const._POSTEDBY}></th>
+  <th width='60%'><{$smarty.const._MD_DISCUSS_MESSAGE}></th>
+  <th><{$smarty.const._MD_DISCUSS_DATE}></th>
+ </tr>
+<{* -- start messages loop -- *}>
+ <{foreach item=msgobj from=$msgobjs}>
+  <tr class="<{cycle values="even,odd"}>">
+   <td><{$msgobj.message_id}></td>
+   <td><{$msgobj.uname}></td>
+   <td><{$msgobj.message}></td>
+   <td><{$msgobj.timestamp}></td>
+  </tr>
+ <{/foreach}>
+<{* -- end messages loop -- *}>
+</table>
+<{$pagenav2}>

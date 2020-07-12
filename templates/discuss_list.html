@@ -1,0 +1,24 @@
+<div><{$smarty.const._LIST}></div>
+<table class="outer" cellspacing="1">
+ <tr>
+  <th><{$smarty.const._MD_DISCUSS_SUBJECT}></th>
+  <th><{$smarty.const._MD_DISCUSS_DESC}></th>
+  <th></th>
+ <{if $xoops_isadmin}>
+  <th></th>
+ <{/if}>
+ </tr>
+<{foreach item=discuss from=$discussions}>
+ <tr valign='top' align='left'>
+  <td class='even'><a href="discuss.php?did=<{$discuss.id}>"><{$discuss.subject}></a></td>
+  <td class="even"><{$discuss.description}></td>
+  <td class="odd"><a href="viewlog.php?did=<{$discuss.id}>">Log</a></td>
+ <{if $xoops_isadmin}>
+  <td class="odd"><a href="discuss_edit.php?op=edit&amp;discuss_id=<{$discuss.id}>"><{$smarty.const._EDIT}></a></td>
+ <{/if}>
+ </tr>
+<{/foreach}>
+</table>
+<{if $xoops_isadmin}>
+ <a href="discuss_edit.php?op=new"><{$smarty.const._ADD}></a></td>
+<{/if}>
